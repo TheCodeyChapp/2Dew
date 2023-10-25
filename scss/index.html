@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <head> 
+            <title> 2Dew</title>
+            <link rel="stylesheet" type="text/css" href="C:\Users\chapp\Documents\2Dew\css\main.css">
+        </head>
+            <body>
+<!--Main Title of page-->
+                <h1 class="title"> What you got 2 dew</h1>
+<!--List on left hand side of all created lists-->
+                <div class="all-jobs">
+                    <h2 class="jobs-title">Active Lists</h2>
+                    <ul class="jobs-list">
+                        <li class="job-name active-job">Buy House</li>
+                        <li class="job-name">Coding Projects</li>
+                        <li class="job-name">College Work</li>
+                    </ul>
+<!--text box to create new lists under all created lists-->
+                    <form action="">
+                        <input 
+                            type="text"
+                            class="new-job"
+                            placeholder="New List"
+                            aria-label="new-job-name"
+                        />
+                        <button class="btn-create" aria-label="create-new-job">+</button>
+                    </form>
+        
+                </div>
+<!--created list contents-->
+                <div class="todo-list">
+                    <div class="list-header">
+                        <h2 class="list-title">Buy House</h2>
+                        <p class="open-task-count">3 tasks remaining</p>
+                    </div>
+
+                    <div class="list-body">
+<!--/Task1-->                    
+                        <div class="task">
+                            <input type="checkbox" id="task-1">
+                            <label for="task-1"><span class="custom-checkbox"></span>Snagging</label>
+                        </div>
+                    
+<!--/Task2-->
+                        <div class="task">
+                            <input type="checkbox" id="task-2">
+                            <label for="task-2"><span class="custom-checkbox"></span>Draw Down</label>
+                        </div>
+                    
+<!--/Task3-->
+                        <div class="task">
+                            <input type="checkbox" id="task-3">
+                            <label for="task-3"><span class="custom-checkbox"></span>Get Keys</label>
+                        </div>
+                    
+
+                        <div class="create-new-task">
+                            <form action="">
+                                <input 
+                                    type="text"
+                                    class="new-task"
+                                    placeholder="New Task"
+                                    aria-label="new-task-name"
+                                />
+                                <button class="btn-create" aria-label="create-new-task">+</button>
+                            </form>
+                        </div>
+                        <div class="delete-task">
+                            <button class="btn-delete">Clear completed tasks</button>
+                            <button class="btn-delete">Delete list</button>
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>
