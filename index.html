@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <head> 
+            <title> 2Dew</title>
+            <link rel="stylesheet" type="text/css" href="css\main.css">
+            <script defer src="main.js"></script>
+        </head>
+            <body>
+
+                <h1 class="title"> What you got 2 dew</h1>
+
+                <div class="all-jobs">
+                    <h2 class="jobs-title">Active Lists</h2>
+                    <ul class="jobs-list" data-lists></ul>
+
+                    <form action=""data-new-list-form>
+                        <input 
+                            type="text"
+                            class="new-job"
+                            data-new-list-input
+                            placeholder="New List"
+                            aria-label="new-job-name"
+                        />
+                        <button class="btn-create" aria-label="create-new-job">+</button>
+                    </form>
+                </div>
+<!--created list contents-->
+                <div class="todo-list" data-list-display-container>
+                    <div class="list-header">
+                        <h2 class="list-title" data-list-title>To Do</h2>
+                        <p class="open-task-count" data-list-count>0 tasks remaining</p>
+                    </div>
+                    <div class="list-body">
+                        <div class="jobs" data-tasks></div>
+
+                            <div class="create-new-task">
+                                <form action="" data-new-task-form>
+                                    <input 
+                                        type="text"
+                                        data-new-task-input
+                                        class="new-task"
+                                        placeholder="New Task"
+                                        aria-label="new-task-name"
+                                    />
+                                    <button class="btn-create" aria-label="create-new-task">+</button>
+                                </form>
+                            </div>
+                            <div class="delete-task">
+                                <button class="btn-delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+                                <button class="btn-delete" data-delete-list-button>Delete list</button>
+                            </div>
+                    </div>
+
+                </div>
+                <template id="task-template">
+                    <div class="task">
+                        <input type="checkbox">
+                        <label>
+                            <span class="custom-checkbox"></span>
+                        </label>
+                    </div>
+                </template>
+</body>
+</html>
